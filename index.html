@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>読めルンです。</title>
+    <meta name="description" content="画像からテキストを生成し、タグ付けによる分類ができるウェブアプリです。">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  
+  <body>
+    <h1>読め<span>ルン</span>です。</h1>
+    <h2>画像をアップロード</h2>
+    
+    <div class="upload-wrap">
+      <div class="drag-area">
+	<p>ここにファイルやフォルダをドラッグすると簡単に画像をアップロードできます</p>
+      </div>
+      <p>または...</p>
+      <form action="./sample.cgi" method="post" enctype="multipart/form-data">
+	<input type="file" name="file" class="upfile" accept=".png,.jpg" capture="environment">
+	<br>
+	<input type="submit" class="submit-btn" value="送信">
+      </form>
+    </div>
+    
+</body>
+</html>
