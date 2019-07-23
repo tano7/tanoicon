@@ -26,7 +26,7 @@ print <<EOF
  </head>
  
  <body>
-<h1>読め<span>ルン</span>です。</h1>
+<h1><a href="index.html">読め<span>ルン</span>です。</a></h1>
 <div class="wrap">
 <div class="img">
 <h2>入力画像</h2>
