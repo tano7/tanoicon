@@ -5,6 +5,126 @@
     <title>読めルンです。</title>
     <meta name="description" content="画像からテキストを生成し、タグ付けによる分類ができるウェブアプリです。">
     <style type="text/css">
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: 'Roboto','Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+    font-size: 15px;
+    line-height:1.9;
+    text-align: justify;
+}
+
+h1 {
+    margin: 10px;
+    color: #a9a9a9;
+    position: relative;
+    line-height: 1.4;
+    padding:0.25em 1em;
+    display: inline-block;
+}
+
+h1 a {
+    text-decoration: none;
+    color: #a9a9a9;
+}
+
+h1 span {
+    color: #66cdaa;
+}
+
+h1:before, h1:after {
+	       content:'';
+	       width: 20px;
+	       height: 30px;
+	       position: absolute;
+	       display: inline-block;
+	   }
+
+h1:before {
+    border-left: solid 3px #a9a9a9;
+    border-top: solid 3px #a9a9a9;
+    top:0;
+    left: 0;
+}
+
+h1:after {
+    border-right: solid 3px #a9a9a9;
+    border-bottom: solid 3px #a9a9a9;
+    bottom:0;
+    right: 0;
+}
+
+h2 {
+    color: white;
+    background-color: #66cdaa;
+    padding-left: 10px;
+}
+
+.submit-btn {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    padding: 0.05em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #03A9F4;/*色*/
+    border: solid 1px #0f9ada;/*線色*/
+    border-radius: 4px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);
+    text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+.submit-btn:active {
+    /*押したとき*/
+    border: solid 1px #03A9F4;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.upload-wrap {
+    text-align: center;
+}
+
+.upload-wrap p {
+    margin: 10px 0;
+}
+
+.drag-area {
+    border-style: dashed;
+    border-color: #ffdab9;
+    border-width: 5px;
+    margin: 50px 100px;
+    padding: 50px;
+    background-color: #EAEAEA;
+}
+
+div img {
+    display: block;
+    margin: 20px;
+    max-width: 90%;
+}
+
+div.wrap {
+    display:flex;
+}
+
+div .img {
+    width:49%;
+}
+
+div .analysis {
+    width: 49%;
+}
+
+div .analysis .analysis-text {
+    margin: 20px;
+}
+
+div .analysis h2 {
+    background-color: #ff7f50;
+}
     .second{
       text-align: center;
       margin-top: 30px;
@@ -123,12 +243,9 @@
 	margin-top: 15px;
     }
 
-
-
     </style>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
   </head>
   
   <body>
